@@ -1,3 +1,5 @@
+version: '3.9'
+
 services:
 
   db:
@@ -30,7 +32,7 @@ services:
       - db
 
   app:
-    build: .
+    image: ghcr.io/victor1997h/devops-flask-postgres:3.0.0
     container_name: flaskapp
 
     ports:
